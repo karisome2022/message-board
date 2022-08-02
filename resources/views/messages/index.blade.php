@@ -26,6 +26,9 @@
         </table>
     @endif
     
+    {{-- ページネーションのリンク これを追加することでindexページの下部分にページ移動のボタンが表示される --}}
+    {{ $messages->links() }}
+    
     {{-- メッセージ作成ページへのリンク --}}
     {!! link_to_route('messages.create', '新規メッセージの投稿', [], ['class' => 'btn btn-primary']) !!}
 

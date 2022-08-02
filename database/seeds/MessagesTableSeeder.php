@@ -26,10 +26,10 @@ class MessagesTableSeeder extends Seeder
             ]);
         */
         
-        for($i = 1; $i <= 5; $i++) {
+        for($i = 1; $i <= 30; $i++) {
             DB::table('messages')->insert([
-            'title' => 'test title ' . $i,
-            'content' => 'test content ' . $i
+            'title' => 'song ' . $i,
+            'content' => 'rock ' . $i
             ]);
         }
     }
